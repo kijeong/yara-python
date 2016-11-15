@@ -102,7 +102,7 @@ class BuildCommand(build):
     if base_dir:
       os.chdir(base_dir)
 
-    exclusions = ['yara/libyara/modules/pe_utils.c']
+    exclusions = []
 
     if self.plat_name in ('win32','win-amd64'):
       building_for_windows = True
